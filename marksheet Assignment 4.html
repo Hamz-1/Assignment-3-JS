@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mark Sheet</title>
+</head>
+<body>
+    <h1>Mark Sheet</h1>
+    <form id="markForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="fatherName">Father's Name:</label>
+        <input type="text" id="fatherName" required>
+
+        <label for="class">Class:</label>
+        <input type="text" id="class" required>
+
+        <table id="markTable">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Total Marks</th>
+                    <th>Obtained Marks</th>
+                    <th>Percentage</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <button type="button" onclick="calculateResults()">Calculate</button>
+    </form>
+
+    <div id="resultContainer" style="display: none;">
+        <h2>Result</h2>
+        <table id="totalResultTable">
+            <thead>
+                <tr>
+                    <th>Total Obtained Marks</th>
+                    <th>Total Percentage</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="totalObtainedMarks"></td>
+                    <td id="totalPercentage"></td>
+                    <td id="grade"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script_marks.js"></script>
+</body>
+</html>

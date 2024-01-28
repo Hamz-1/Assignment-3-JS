@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#markTable, #totalResultTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: antiquewhite;
+}
+
+#markTable, #totalResultTable th, #totalResultTable td {
+    border: 1px solid #ddd;
+}
+
+#markTable th, #markTable td, #totalResultTable th, #totalResultTable td {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#resultContainer {
+    max-width: 800px;
+    margin: 20px auto;
+}
